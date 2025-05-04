@@ -147,70 +147,6 @@ const projects = [
         visible: true
     },    
     {
-        id: 'ai-machine-learning',
-        school: 'Thomas More',
-        title: 'Machine Learning Opdracht',
-        description: '',
-        longDescription: '',
-        category: 'AI',
-        image: '/assets/images/projects/machinelearning.jpg', 
-        technologies: ['Python', 'Sklearn'],
-        link: '', 
-        proofLink: '', 
-        reflection: '',
-        features: [
-            '',
-        ],
-        challenges: '',
-        screenshots: [
-            {
-                image: '/',
-            },
-            {
-                image: '/',
-            },
-            {
-                image: '/',
-            },
-            {
-                image: '/',
-            }
-        ],
-        visible: false
-    },
-    {
-        id: 'ai-deep-learning',
-        school: 'Thomas More',
-        title: 'Deep Learning Opdracht',
-        description: '',
-        longDescription: '',
-        category: 'AI',
-        image: '/assets/images/projects/deeplearning.jpg', 
-        technologies: ['Python', 'TensorFlow'],
-        link: '', 
-        proofLink: '', 
-        reflection: '',
-        features: [
-            '',
-        ],
-        challenges: '',
-        screenshots: [
-            {
-                image: '/',
-            },
-            {
-                image: '/',
-            },
-            {
-                image: '/',
-            },
-            {
-                image: '/',
-            }
-        ],
-        visible: false
-    },
-    {
         id: 'pikassa',
         school: 'Thomas More',
         course: 'Digital Innovation',
@@ -249,38 +185,6 @@ const projects = [
         visible: true
     },     
     {
-        id: 'mpi-oosterlo',
-        school: 'Thomas More',
-        title: 'MPI Oosterlo',
-        description: '',
-        longDescription: '',
-        category: 'Web',
-        image: '', 
-        technologies: ['Laravel', 'PHP', 'SQLite', 'Figma', 'Flutter'],
-        link: '', 
-        proofLink: '', 
-        reflection: '',
-        features: [
-            '',
-        ],
-        challenges: '',
-        screenshots: [
-            {
-                image: '/',
-            },
-            {
-                image: '/',
-            },
-            {
-                image: '/',
-            },
-            {
-                image: '/',
-            }
-        ],
-        visible: false
-    },
-    {
         id: 'trackmore',
         school: 'Thomas More',
         course: 'Digital Innovation',
@@ -315,39 +219,7 @@ const projects = [
             }
         ],
         visible: true
-    },    
-    {
-        id: 'tech-talk',
-        school: 'Thomas More',
-        title: 'Tech Talk',
-        description: 'Tech talks are presentations where experts share ideas, trends, and insights about technology to inform and inspire audiences.',
-        longDescription: '',
-        category: "Extra's",
-        image: '/assets/images/projects/techtalk.avif', 
-        technologies: ['Laravel', 'CloudFlare', 'RFID', 'Microsoft Figma'],
-        link: '', 
-        proofLink: '', 
-        reflection: '',
-        features: [
-            '',
-        ],
-        challenges: '',
-        screenshots: [
-            {
-                image: '/',
-            },
-            {
-                image: '/',
-            },
-            {
-                image: '/',
-            },
-            {
-                image: '/',
-            }
-        ],
-        visible: false
-    }
+    },   
 ];
 
 export default projects;

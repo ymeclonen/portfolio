@@ -28,9 +28,9 @@ const About = () => {
               <div className="lg:w-1/3 flex justify-center">
                 <div className="rounded-lg overflow-hidden shadow-lg max-w-xs">
                   <img
-                      src={aboutData.profileImage}
-                      alt={aboutData.name}
-                      className="w-full h-auto"
+                    src={aboutData.profileImage}
+                    alt={aboutData.name}
+                    className="w-[600px] h-[380px] object-cover"
                   />
                 </div>
               </div>

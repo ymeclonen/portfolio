@@ -2,7 +2,7 @@ import { FaLightbulb, FaRobot, FaBriefcase, FaWineBottle } from 'react-icons/fa'
 
 const aboutData = {
   name: 'Your Name',
-  profileImage: 'https://placehold.co/600x800',
+  profileImage: '/assets/images/yme.png',
   introduction: "Hello! I'm Yme Clonen, a passionate student of Applied Computer Science. I have always been fascinated by technology and how it can be leveraged to solve real-world problems.",
   whyField: [
     "I chose this field because it perfectly combines my passion for programming with my fascination for artificial intelligence. The interdisciplinary nature of AI allows me to work on diverse projects that leverage data science, machine learning, and computational thinking to solve complex problems.",
