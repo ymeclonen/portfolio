@@ -1,0 +1,80 @@
+/* Custom transitions */
+.transition-max-height {
+    transition: max-height 0.5s ease;
+  }
+  
+  /* Animations */
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translateY(10px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  .animate {
+    animation: fadeIn 0.6s ease-out;
+  }
+  
+  /* Scrollbar styling */
+  ::-webkit-scrollbar {
+    width: 8px;
+  }
+  
+  ::-webkit-scrollbar-track {
+    background: #f1f1f1;
+  }
+  
+  ::-webkit-scrollbar-thumb {
+    background: var(--primary-color);
+    border-radius: 4px;
+  }
+  
+  ::-webkit-scrollbar-thumb:hover {
+    background: var(--primary-dark);
+  }
+  
+  /* Smooth scrolling for the entire page */
+  html {
+    scroll-behavior: smooth;
+  }
+  
+  /* Focus styles for accessibility */
+  :focus {
+    outline: 2px solid var(--primary-color);
+    outline-offset: 2px;
+  }
+  
+  /* Additional utility classes */
+  .text-balance {
+    text-wrap: balance;
+  }
+  
+  .prose {
+    max-width: 65ch;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  /* Print styles for CV page */
+  @media print {
+    header, footer, .bg-gray-200 {
+      display: none;
+    }
+    
+    body {
+      background-color: white;
+    }
+    
+    .shadow-md, .shadow-lg, .shadow-xl {
+      box-shadow: none;
+    }
+    
+    .container {
+      max-width: 100%;
+      padding: 0;
+    }
+  }
