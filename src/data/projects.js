@@ -31,7 +31,6 @@ const projects = [
                 image: '/assets/images/projects/pcbDesign.jpg',
             }
         ],
-        featured: true,
         visible: true
     },
     {
@@ -218,6 +217,7 @@ const projects = [
                 image: '/assets/images/projects/trackmore_3.jpg',
             }
         ],
+        featured: true,
         visible: true
     },   
 ];
