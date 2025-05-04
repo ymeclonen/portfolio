@@ -6,14 +6,17 @@ import projects from '../data/projects';
 
 const Projects = () => {
   const [filter, setFilter] = useState('all');
-  const [filteredProjects, setFilteredProjects] = useState(projects);
+  const [filteredProjects, setFilteredProjects] = useState([]);
   const [isGrid, setIsGrid] = useState(true);
+  
+  // Get only visible projects (where visible is not explicitly false)
+  const visibleProjects = projects.filter(project => project.visible !== false);
 
   useEffect(() => {
     if (filter === 'all') {
-      setFilteredProjects(projects);
+      setFilteredProjects(visibleProjects);
     } else {
-      setFilteredProjects(projects.filter(project => project.category === filter));
+      setFilteredProjects(visibleProjects.filter(project => project.category === filter));
     }
   }, [filter]);
 
@@ -25,9 +28,10 @@ const Projects = () => {
     setIsGrid(!isGrid);
   };
 
-  const categories = ['all', ...new Set(projects.map(project => project.category))];
+  // Get categories only from visible projects
+  const categories = ['all', ...new Set(visibleProjects.map(project => project.category))];
 
-  // Split projects into two groups
+  // Split projects into two groups (only visible ones)
   const thomasMoreProjects = filteredProjects.filter(project => project.school === 'Thomas More');
   const outsideProjects = filteredProjects.filter(project => project.school === 'Outside');
 

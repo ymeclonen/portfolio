@@ -57,7 +57,7 @@ function CustomCarousel({ children }) {
 
       {/* Next Button */}
       <button
-        className="absolute right-4 top-1/2 -translate-y-1/2 w-10 h-10 flex items-center justify-center bg-white/10 backdrop-blur-sm rounded-full text-white text-xl shadow-lg hover:bg-white/20 transition-transform duration-300 hover:scale-110"
+        className="absolute right-4 top-1/2 -translate-y-1/2 w-10 h-10 flex items-center justify-center bg-black/30 backdrop-blur-sm rounded-full text-white text-xl shadow-lg hover:bg-black/40 transition-transform duration-300 hover:scale-110"
         onClick={(e) => {
           e.preventDefault();
           slideNext();
@@ -68,7 +68,7 @@ function CustomCarousel({ children }) {
 
       {/* Prev Button */}
       <button
-        className="absolute left-4 top-1/2 -translate-y-1/2 w-10 h-10 flex items-center justify-center bg-white/10 backdrop-blur-sm rounded-full text-white text-xl shadow-lg hover:bg-white/20 transition-transform duration-300 hover:scale-110"
+        className="absolute left-4 top-1/2 -translate-y-1/2 w-10 h-10 flex items-center justify-center bg-black/30 backdrop-blur-sm rounded-full text-white text-xl shadow-lg hover:bg-black/40 transition-transform duration-300 hover:scale-110"
         onClick={(e) => {
           e.preventDefault();
           slidePrev();

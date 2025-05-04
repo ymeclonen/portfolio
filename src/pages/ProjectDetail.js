@@ -123,6 +123,14 @@ const ProjectDetail = () => {
                                 ))}
                             </div>
 
+                            {/* Course information - new section */}
+                            {project.course && (
+                                <div className="mb-6">
+                                    <h2 className="text-2xl font-bold mb-2">Course</h2>
+                                    <p className="text-gray-700">{project.course}</p>
+                                </div>
+                            )}
+
                             <div className="mb-8">
                                 <h2 className="text-2xl font-bold mb-4">About this project</h2>
                                 <p className="text-gray-700 mb-4">{project.description}</p>
