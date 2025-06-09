@@ -1,74 +1,5 @@
 const projects = [
     {
-        id: 'robotic-arm-controller',
-        school: 'Outside',
-        course: 'Elektronica-ICT Final Year Project',
-        title: 'Robotic Arm with Custom Controller',
-        description: 'A robotic arm project powered by stepper motors and servos, featuring a custom controller with a real-time display.',
-        longDescription: 'For my final year project in Elektronica-ICT, I developed a robotic arm controlled via stepper motors and servos. To operate the arm, I built a custom controller equipped with a display showing real-time statistics like motor positions and operational states.\n\nThe project involved mechanical design using Inventor, PCB creation with EasyEDA, and embedded programming for precise motor control. This system allows precise manipulation, offering valuable learning in system integration, electronics, and software development.',
-        category: 'IOT',
-        image: '/assets/images/projects/robotMain.jpg',
-        technologies: ['Python', 'EasyEDA', 'Stepper Motors', 'Servos', 'Inventor', 'Raspberry Pi'],
-        link: 'https://yme20222023.kogekaschoolverlaters.be/',
-        proofLink: '', 
-        reflection: 'This project taught me the importance of iterative testing and integrating hardware and software harmoniously. Managing real-time feedback on a custom controller while ensuring system safety was both a technical and personal growth experience.',
-        workOn: [
-            'Robotic arm driven by stepper motors and servos',
-            'Custom-built controller with display for system stats',
-            'Real-time monitoring of motor positions and system state',
-            'Custom PCB designs for motor and controller circuits',
-            'Mechanical design using Inventor software'
-        ],
-        challenges: 'One key challenge was achieving precise, synchronized control of multiple motors, which required careful programming and testing. Another was designing a reliable, user-friendly controller with real-time feedback, integrating both hardware and software effectively.', 
-        screenshots: [
-            {
-                image: '/assets/images/projects/robotarm.jpg',
-            },
-            {
-                image: '/assets/images/projects/inventor.jpg',
-            },
-            {
-                image: '/assets/images/projects/pcbDesign.jpg',
-            }
-        ],
-        visible: true
-    },
-    {
-        id: 'balancing-robot',
-        school: 'Outside',
-        course: 'Elektronica-ICT Final Year Project',
-        title: 'Balancing Robot',
-        description: 'A self-balancing robot using PID control, stepper motors, a custom PCB, and a companion mobile app for real-time adjustments and monitoring.',
-        longDescription: 'This project is a two-wheeled self-balancing robot that uses a PID control algorithm to maintain stability. The system is driven by stepper motors controlled via a custom-designed PCB. A dedicated mobile app communicates with the robot for tuning PID parameters, monitoring sensor data, and issuing commands.\n\nThe robot’s body was designed using Autodesk Inventor and fabricated using 3D printing and PCB manufacturing. The control system runs on a Raspberry Pi, integrating sensor feedback from an IMU (Inertial Measurement Unit) to keep the robot upright.',
-        category: 'IOT',
-        image: '/assets/images/projects/balancingrobot.jpg',
-        technologies: ['Python', 'EasyEDA', 'Stepper Motors', 'Inventor', 'Raspberry Pi', 'PID Control', 'Bluetooth'],
-        proofLink: '', 
-        reflection: 'Working on the Balancing Robot project was a valuable learning experience that pushed me to bridge the gap between hardware and software integration. The process of tuning the PID control system taught me the importance of precision and patience, as even minor changes could dramatically alter the robot’s behavior. Developing a custom PCB was a rewarding challenge that improved my circuit design skills and deepened my understanding of practical hardware constraints in compact embedded systems.\n\nAdditionally, creating a mobile app for real-time communication via Bluetooth introduced me to the complexities of wireless data exchange and the importance of reliable, low-latency connections in control systems. Through this project, I gained experience in system-wide debugging, from electrical issues on the PCB to software bugs affecting motor control and sensor feedback.\n\nOverall, this project significantly enhanced my confidence in embedded systems development, control algorithms, and multidisciplinary project management — skills I’m eager to apply and build upon in future engineering challenges.',
-        workOn: [
-            'PID control system for real-time balancing',
-            'Custom PCB designed and manufactured via EasyEDA',
-            'Stepper motor control for precise wheel movement',
-            'Mobile app for adjusting PID parameters and monitoring data',
-            'Raspberry Pi-based main controller',
-            '3D designed and printed robot chassis',
-            'Real-time sensor data visualization'
-        ],
-        challenges: 'Tuning the PID values for stable balancing was one of the main challenges, as small adjustments had a significant impact on system performance. Another complex task was integrating the real-time communication between the Raspberry Pi and the mobile app via Bluetooth.\n\nDesigning a reliable and compact PCB that could handle motor drivers, IMU communication, and power management within a small footprint also presented unique hardware constraints.',
-        screenshots: [
-            {
-                image: '/assets/images/projects/balancingrobot.jpg',
-            },
-            {
-                image: '/assets/images/projects/pcbDesign2.jpg',
-            },
-            {
-                image: '/assets/images/projects/balancingapp.jpg',
-            }
-        ],
-        visible: true
-    },    
-    {
         id: 'skills-sem1',
         school: 'Thomas More',
         course: 'Skills Integration Lab 2',
@@ -219,7 +150,136 @@ const projects = [
         ],
         featured: true,
         visible: true
-    },   
+    }, 
+    {
+        id: 'credon',
+        school: 'Thomas More',
+        course: 'Digital Innovation',
+        title: 'Credon',
+        description: 'A finalized data project for Credon to showcase intern potential using Microsoft Fabric and Power BI.',
+        longDescription: 'Credon is a company based in Tessenderlo that provides incoming interns with a one-week data challenge to demonstrate their capabilities. Typically, interns only have one week to explore and present insights from the dataset, resulting in incomplete projects. My task is to create a full, polished version of this project to serve as a reference and inspiration for future interns. The solution uses Microsoft Fabric and follows the Medallion architecture (bronze, silver, gold). For the gold layer, a star schema is implemented. The project is primarily visualized in Power BI, with plans to extend it to Qlik if time permits. Additional considerations include enhancing the dataset with updates and new features to demonstrate advanced possibilities.',
+        category: 'DATA',
+        image: '/assets/images/projects/credon.jpg', 
+        technologies: ['Microsoft Fabric', 'Power BI', 'QLik'],
+        link: '', 
+        proofLink: '', 
+        reflection: 'This project challenged me to take ownership of a full data pipeline and showcase what is possible in just one week. It also pushed me to think beyond just reporting—considering future maintainability, scalability, and how to guide interns with a strong reference implementation.',
+        workOn: [
+            'Designed and built a complete Medallion architecture pipeline using Microsoft Fabric',
+            'Created the Gold layer using a star schema',
+            'Developed visual reports in Power BI',
+            'Planned to replicate dashboard in Qlik',
+            'Explored ways to improve and update data for future use'
+        ],
+        challenges: 'Ensuring the project could be understood by future interns while still showcasing advanced capabilities. Managing time to go beyond just displaying the data and thinking about enhancements. Learning how to efficiently work within the Medallion architecture using Microsoft Fabric.',
+        screenshots: [
+            {
+                image: '/assets/images/projects/credon_1.jpg', 
+            },
+            {
+                image: '/assets/images/projects/credon_2.jpg', 
+            }
+        ],
+        visible: true
+    },
+    {
+        id: 'mpi',
+        school: 'Thomas More',
+        course: 'Digital Innovation',
+        title: 'MPI Oosterlo',
+        description: 'A mobile and web application to manage client visits, notes, and user accounts for MPI Oosterlo.',
+        longDescription: 'The MPI Oosterlo project aimed to create a digital solution to streamline employee workflows, enabling them to schedule client visits, keep track of notes, and manage employee and client information. I focused primarily on developing the mobile application using Flutter and Dart. The app includes features such as visit scheduling, adding notes via both text and speech input, and a secure login system. On the web side, I contributed by verifying that all functional requirements were met and provided assistance where needed. The backend is powered by PHP and MySQL, ensuring robust data handling and security.',
+        category: 'APP',
+        image: '/assets/images/projects/mpi.jpg', 
+        technologies: ['Dart', 'Flutter', 'PHP', 'MySQL'],
+        link: '', 
+        proofLink: 'https://github.com/Thomas-More-Digital-Innovation/2425-MPI-002-jobcoachOndersteuning',
+        reflection: 'This project helped me grow my skills in mobile app development and working within a team to build both front-end and back-end solutions. It taught me the importance of usability, data security, and meeting real-world client needs.',
+        workOn: [
+            'Developed the mobile app using Flutter and Dart',
+            'Implemented visit scheduling functionality',
+            'Enabled note-taking via text and speech',
+            'Built a secure login system for users',
+            'Tested and verified website requirements',
+            'Assisted in backend development with PHP and MySQL'
+        ],
+        challenges: 'Ensuring data privacy and security for sensitive client information, managing real-time scheduling and updates, and balancing mobile and web development needs in a collaborative team environment.',
+        screenshots: [
+            {
+                image: '', 
+            }
+        ],
+        visible: true
+    },
+    {
+        id: 'robotic-arm-controller',
+        school: 'Outside',
+        course: 'Elektronica-ICT Final Year Project',
+        title: 'Robotic Arm with Custom Controller',
+        description: 'A robotic arm project powered by stepper motors and servos, featuring a custom controller with a real-time display.',
+        longDescription: 'For my final year project in Elektronica-ICT, I developed a robotic arm controlled via stepper motors and servos. To operate the arm, I built a custom controller equipped with a display showing real-time statistics like motor positions and operational states.\n\nThe project involved mechanical design using Inventor, PCB creation with EasyEDA, and embedded programming for precise motor control. This system allows precise manipulation, offering valuable learning in system integration, electronics, and software development.',
+        category: 'IOT',
+        image: '/assets/images/projects/robotMain.jpg',
+        technologies: ['Python', 'EasyEDA', 'Stepper Motors', 'Servos', 'Inventor', 'Raspberry Pi'],
+        link: 'https://yme20222023.kogekaschoolverlaters.be/',
+        proofLink: '', 
+        reflection: 'This project taught me the importance of iterative testing and integrating hardware and software harmoniously. Managing real-time feedback on a custom controller while ensuring system safety was both a technical and personal growth experience.',
+        workOn: [
+            'Robotic arm driven by stepper motors and servos',
+            'Custom-built controller with display for system stats',
+            'Real-time monitoring of motor positions and system state',
+            'Custom PCB designs for motor and controller circuits',
+            'Mechanical design using Inventor software'
+        ],
+        challenges: 'One key challenge was achieving precise, synchronized control of multiple motors, which required careful programming and testing. Another was designing a reliable, user-friendly controller with real-time feedback, integrating both hardware and software effectively.', 
+        screenshots: [
+            {
+                image: '/assets/images/projects/robotarm.jpg',
+            },
+            {
+                image: '/assets/images/projects/inventor.jpg',
+            },
+            {
+                image: '/assets/images/projects/pcbDesign.jpg',
+            }
+        ],
+        visible: true
+    },
+    {
+        id: 'balancing-robot',
+        school: 'Outside',
+        course: 'Elektronica-ICT Final Year Project',
+        title: 'Balancing Robot',
+        description: 'A self-balancing robot using PID control, stepper motors, a custom PCB, and a companion mobile app for real-time adjustments and monitoring.',
+        longDescription: 'This project is a two-wheeled self-balancing robot that uses a PID control algorithm to maintain stability. The system is driven by stepper motors controlled via a custom-designed PCB. A dedicated mobile app communicates with the robot for tuning PID parameters, monitoring sensor data, and issuing commands.\n\nThe robot’s body was designed using Autodesk Inventor and fabricated using 3D printing and PCB manufacturing. The control system runs on a Raspberry Pi, integrating sensor feedback from an IMU (Inertial Measurement Unit) to keep the robot upright.',
+        category: 'IOT',
+        image: '/assets/images/projects/balancingrobot.jpg',
+        technologies: ['Python', 'EasyEDA', 'Stepper Motors', 'Inventor', 'Raspberry Pi', 'PID Control', 'Bluetooth'],
+        proofLink: '', 
+        reflection: 'Working on the Balancing Robot project was a valuable learning experience that pushed me to bridge the gap between hardware and software integration. The process of tuning the PID control system taught me the importance of precision and patience, as even minor changes could dramatically alter the robot’s behavior. Developing a custom PCB was a rewarding challenge that improved my circuit design skills and deepened my understanding of practical hardware constraints in compact embedded systems.\n\nAdditionally, creating a mobile app for real-time communication via Bluetooth introduced me to the complexities of wireless data exchange and the importance of reliable, low-latency connections in control systems. Through this project, I gained experience in system-wide debugging, from electrical issues on the PCB to software bugs affecting motor control and sensor feedback.\n\nOverall, this project significantly enhanced my confidence in embedded systems development, control algorithms, and multidisciplinary project management — skills I’m eager to apply and build upon in future engineering challenges.',
+        workOn: [
+            'PID control system for real-time balancing',
+            'Custom PCB designed and manufactured via EasyEDA',
+            'Stepper motor control for precise wheel movement',
+            'Mobile app for adjusting PID parameters and monitoring data',
+            'Raspberry Pi-based main controller',
+            '3D designed and printed robot chassis',
+            'Real-time sensor data visualization'
+        ],
+        challenges: 'Tuning the PID values for stable balancing was one of the main challenges, as small adjustments had a significant impact on system performance. Another complex task was integrating the real-time communication between the Raspberry Pi and the mobile app via Bluetooth.\n\nDesigning a reliable and compact PCB that could handle motor drivers, IMU communication, and power management within a small footprint also presented unique hardware constraints.',
+        screenshots: [
+            {
+                image: '/assets/images/projects/balancingrobot.jpg',
+            },
+            {
+                image: '/assets/images/projects/pcbDesign2.jpg',
+            },
+            {
+                image: '/assets/images/projects/balancingapp.jpg',
+            }
+        ],
+        visible: true
+    },    
 ];
 
 export default projects;
