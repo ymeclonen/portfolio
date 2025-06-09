@@ -206,7 +206,61 @@ const projects = [
         challenges: 'Ensuring data privacy and security for sensitive client information, managing real-time scheduling and updates, and balancing mobile and web development needs in a collaborative team environment.',
         screenshots: [
             {
-                image: '', 
+                image: '/assets/images/projects/mpi_1.jpg', 
+            },
+            {
+                image: '/assets/images/projects/mpi_2.jpg', 
+            },
+            {
+                image: '/assets/images/projects/mpi_3 .jpg', 
+            }
+        ],
+        visible: true
+    },
+    {
+        id: 'tecktalks',
+        school: 'Thomas More',
+        course: 'Digital Innovation',
+        title: 'Tech Talks',
+        description: 'A series of tech talks presenting key technologies such as Laravel, Cloudflare, RFID, Microsoft Fabric, and Tensorflow.',
+        longDescription: 'As part of the Digital Innovation course at Thomas More, I participated in Tech Talks, where I presented various modern technologies. Each talk focused on one technology from the list: Laravel (a PHP web framework), Cloudflare (a performance and security platform), RFID (Radio Frequency Identification), Microsoft Fabric (a unified data analytics platform), and TensorFlow (an open-source machine learning library). The goal was to explain their core concepts, demonstrate real-world applications, and discuss potential use cases in digital projects.',
+        category: 'Talks',
+        image: '/assets/images/projects/techtalk.jpg', 
+        technologies: ['Laravel', 'Cloudflare', 'RFID', 'Microsoft Fabric', 'Tensorflow'],
+        link: '', 
+        proofLink: '',
+        reflection: 'Tech Talks helped me grow as a communicator and deepened my understanding of each technology. By researching, structuring presentations, and answering questions, I learned how to break down complex topics into digestible insights. I also discovered how important it is to adapt your language depending on the technical level of your audience.',
+        workOn: [
+            'Prepared content and slides for each technology topic',
+            'Researched up-to-date use cases and examples',
+            'Presented each tech topic in front of an audience',
+            'Answered questions and led small discussions afterward',
+            'Collaborated with peers to ensure engaging and informative sessions'
+        ],
+        challenges: 'One of the main challenges was simplifying complex technologies like TensorFlow for a general audience without losing the essence of what makes them powerful. Another challenge was managing time effectively to cover all important points within a limited speaking slot.',
+        visible: true
+    },
+    {
+        id: 'pzb',
+        school: 'Outside',
+        title: 'Project Zomboid',
+        description: 'An interactive loot-tracking map for Project Zomboid.',
+        longDescription: 'This project is a custom web-based interactive map for the game Project Zomboid. I built it for a friend and myself so we could track our in-game progress, including which areas we had already looted and where we needed to explore next. It serves as a companion tool that improves planning and coordination during gameplay.',
+        category: 'Web',
+        image: '/assets/images/projects/pzb.jpg', 
+        technologies: ['API', 'OpenSeadragon', 'JavaScript', 'HTML/CSS'],
+        link: '', 
+        proofLink: '',
+        reflection: 'This project taught me a lot about working with large, high-resolution images on the web, and how to structure interactivity in a meaningful way for players. I also learned how to integrate third-party libraries like OpenSeadragon to make panning and zooming smooth, even on a large map.',
+        workOn: [
+            'Integrating the full Project Zomboid map with OpenSeadragon for smooth zoom and pan',
+            'Building a custom loot-tracking system for in-game buildings',
+            'Designing a user-friendly interface for quick updates and reference'
+        ],
+        challenges: 'The biggest challenge was getting the Project Zomboid map to display cleanly and efficiently on the web without compromising visual quality. Using OpenSeadragon helped manage large image tiles, but configuring it properly and aligning the interactive layers took a lot of fine-tuning.',
+        screenshots: [
+            {
+                image: '/assets/images/projects/pzb_1.jpg', 
             }
         ],
         visible: true
